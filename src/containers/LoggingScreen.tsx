@@ -1,7 +1,8 @@
-import { FC } from "react";
-import { PlaylistAddCheckRounded } from "@mui/icons-material";
+import { Settings as SettingsIcon } from "@mui/icons-material";
 import { Button, Stack, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import { FC } from "react";
+
 import logo from "assets/img/hubLogo.svg";
 
 export const LoggingScreen: FC = () => {
@@ -22,7 +23,7 @@ export const LoggingScreen: FC = () => {
           },
         }}
       >
-        <img src={logo} />
+        <img src={logo} alt="logo" />
         <Box>
           <Typography
             mt="95px"
@@ -79,7 +80,7 @@ export const LoggingScreen: FC = () => {
               },
             }}
           >
-            <PlaylistAddCheckRounded
+            <SettingsIcon
               sx={{
                 color: "#959595",
                 padding: "7px",
